@@ -2,6 +2,7 @@
 
 function getFullNames(users) {
   // your code here
+  return users.map(user => `${user.firstName} ${user.lastName}`);
 }
 
 console.log(getFullNames([{ firstName: 'John', lastName: 'Doe' }, { firstName: 'Jane', lastName: 'Doe' }])) // ['John Doe', 'Jane Doe']
