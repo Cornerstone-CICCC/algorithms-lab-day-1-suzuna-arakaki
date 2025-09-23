@@ -2,6 +2,13 @@
 
 function formatDate(dateStr) {
   // your code here
+  const dateObject = new Date(dateStr.replace(/-/g, '/'));
+  const englishDate = dateObject.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+  return englishDate;
 }
 
 console.log(formatDate('2022-01-01')) // 'January 1, 2022'
