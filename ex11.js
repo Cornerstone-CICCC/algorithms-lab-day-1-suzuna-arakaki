@@ -2,6 +2,7 @@
 
 function reverseWords(text) {
   // your code here
+  return text.split(/\s+/).reverse().join(' ');
 }
 
 console.log(reverseWords('The quick brown fox')) // 'fox brown quick The'
