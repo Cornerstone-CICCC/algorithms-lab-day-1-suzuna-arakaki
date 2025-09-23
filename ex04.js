@@ -2,6 +2,10 @@
 
 function countOccurrences(arr) {
   // your code here
+  return arr.reduce((counts, str) => {
+    counts[str] = (counts[str] || 0) +1;
+    return counts;
+  }, {})
 }
 
 console.log(countOccurrences(['apple', 'banana', 'apple'])) // { apple: 2, banana: 1 }
