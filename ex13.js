@@ -2,6 +2,7 @@
 
 function findById(arr, id) {
   // your code here
+  return arr.find(arrId => arrId.id === id) || null;
 }
 
 console.log(findById([{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }], 2)) // { id: 2, name: 'Jane' }
