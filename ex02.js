@@ -2,6 +2,7 @@
 
 function filterByCategory(products, category) {
   // your code here
+  return products.filter(product => product.category === category)
 }
 
 console.log(filterByCategory([{ name: 'Apple', category: 'Fruit' }, { name: 'Carrot', category: 'Vegetable' }], 'Fruit')) // [{ name: 'Apple', category: 'Fruit' }]
