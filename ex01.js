@@ -2,6 +2,7 @@
 
 function sumPrices(products) {
   // your code here
+  return products.reduce((total, product) => total + product.price, 0)
 }
 
 console.log(sumPrices([{ price: 10 }, { price: 20 }, { price: 30 }])) // 60
