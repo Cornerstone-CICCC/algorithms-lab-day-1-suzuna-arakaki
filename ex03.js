@@ -2,7 +2,7 @@
 // (each with 'firstName' and 'lastName' properties) and returns an array of full names (e.g., 'John Doe'). 
 
 function getFullNames(users) {
-  let fullName = [];
+  const fullName = [];
   for (let i = 0; i < users.length; i++){
     let fName = `${users[i].firstName} ${users[i].lastName}`;
     fullName.push(fName);
