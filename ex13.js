@@ -2,8 +2,6 @@
 // and returns the object with the matching id, or null if not found.
 
 function findById(arr, id) {
-  //配列内でid:2と一致するものを探す
-  //見つけたらそのジェクトごと表示
   for (let i = 0; i < arr.length; i++){
     if (arr[i].id === id){
       return arr[i];
