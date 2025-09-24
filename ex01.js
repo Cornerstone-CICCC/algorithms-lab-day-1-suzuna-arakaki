@@ -2,13 +2,10 @@
 // (each with a 'price' property) and returns the total sum of all prices.
 
 function sumPrices(products) {
-  //計算の合計を入れるためのvariable
   let sum = 0;
-  // ループfor文で、配列内のオブジェクトを一つず取り出して0+数字
   for (let i = 0; i < products.length; i++){
        sum += products[i].price
-    }
-    // returnで合計を返す
+  }
     return sum;
 }
 
