@@ -2,8 +2,6 @@
 // and returns a new array with only the users who are 18 or older.
 
 function filterAdults(users) {
-  //年齢が18歳以上の人だけを抽出
-  //オブジェクトごと表示
   const adults = [];
   for (let i = 0; i < users.length; i++){
     if (users[i].age >= 18){
