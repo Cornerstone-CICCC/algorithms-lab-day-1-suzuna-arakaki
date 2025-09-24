@@ -2,7 +2,7 @@
 
 function filterByCategory(products, category) {
   let result = [];
-  for (i = 0; i < products.length; i++) {
+  for (let i = 0; i < products.length; i++) {
     result = products[i].category === category;
     if (result){
       return [products[i]];
